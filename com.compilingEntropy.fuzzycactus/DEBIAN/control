@@ -1,14 +1,16 @@
 Package: com.compilingentropy.fuzzycactus
 Name: Fuzzycactus
-Version: 1.0.7-1
+Version: 2.0-1
 Description: Automated MobileSafari Fuzzer
 	<html>
 	<div align="left">
 	<p>A tool which automates and simplifies the on-device fuzzing of MobileSafari.
 	<p>How it works: This tool can turn anyone's freshly jailbroken device into a fuzzing machine in minutes. All the setup is handled for you.
 	<br>
-	Usage: fuzzycactus [start/stop/watch/help] /path/to/file.mov [-s] [-t 11] [-r 0.0001:0.001]
-	<p>~$ fuzzycactus start /path/to/file
+	Usage:
+	<p>fuzzycactus [action] [file] [options]
+	<p>fuzzycactus [start/stop/watch/help] [./file.mov] [-s] [-t 11] [-r 0.0001:0.001] [-k]
+	<p>~$ fuzzycactus start ./file.mov
 	<p>~$ fuzzycactus stop
 	<p>~$ fuzzycactus watch
 	<p>~$ fuzzycactus help
@@ -25,17 +27,35 @@ Description: Automated MobileSafari Fuzzer
 	<br>
 	<br>
 	Changelog:
-	<p>1.0.7
-	<p>Fixed directory naming
-	<p>Fixed pairing algorithm
-	<p>Fixed hangs in crashclean
-	<p>Fixed '*' appender
-	<p>Fixed 'watch' to count processes better
+	<p>2.0
+	<p>-Consolidated scripts to one file
+	<p>-Crashcleans in realtime as it fuzzes
+	<p>-Auto-removes files that didn't cause crashes
+	<p>-Added the '-k' option, allowing you to resume fuzzing after a kernel panic
+	<p>-Completely re-worked logic
+	<p>-Removed several hundred lines of duplicate code
+	<p>-Fixed 'stop' so that it now works (was previously broken)
+	<p>-Made 'watch' actually consistent
+	<p>-Saves most recently used settings in config file for easy resuming
+	<p>-Reads previous seed, no more 'skipping..' forever
+	<p>-Better handling of file extensions
+	<p>-Process management that is actually real
+	<p>-Better internal handling of errors for a smoother ride
+	<p>-Speed and memory improvements
+	<p>-Help text now makes so much more sense
+	<p>-Better
+	<br>
+	1.0.7
+	<p>-Fixed directory naming
+	<p>-Fixed pairing algorithm
+	<p>-Fixed hangs in crashclean
+	<p>-Fixed '*' appender
+	<p>-Fixed 'watch' to count processes better
 	<br>
 	1.0.6
-	<p>Added 'watch' command to allow you to view current session
-	<p>Added '-r' option to allow users to specify their own mutation percentages
-	<p>Updated the '-t' regex to allow decimal time values
+	<p>-Added 'watch' command to allow you to view current session
+	<p>-Added '-r' option to allow users to specify their own mutation percentages
+	<p>-Updated the '-t' regex to allow decimal time values
 	</div>
 	</html>
 Section: cmd-tool
