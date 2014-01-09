@@ -27,9 +27,9 @@ Description: Automated MobileSafari Fuzzer
 	<br>
 	<br>
 	Changelog:
-	<br>
 	<p>2.0.2
 	<p>-Minor bugfixes
+	<br>
 	2.0.1
 	<p>-Lets you know when using non-default options
 	<p>-Significant speed improvements on startup
