@@ -1,3 +1,9 @@
 #!/bin/bash
 chmod +x /usr/bin/fuzzycactus
+wrkdir="/private/var/fuzzycactus"
+if [[ ! -d "$wrkdir/" ]]; then
+	mkdir "$wrkdir/"
+	echo 'Fuzzycactus is now installed.
+Do "fuzzycactus help" to learn to use fuzzycactus.' > "$wrkdir/README"
+fi
 exit
