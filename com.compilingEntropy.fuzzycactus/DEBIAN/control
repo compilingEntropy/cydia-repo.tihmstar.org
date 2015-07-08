@@ -1,6 +1,6 @@
 Package: com.compilingentropy.fuzzycactus
 Name: Fuzzycactus
-Version: 2.1-1
+Version: 2.1.1-1
 Description: Automated MobileSafari Fuzzer
 	<html>
 	<div align="left">
@@ -27,6 +27,11 @@ Description: Automated MobileSafari Fuzzer
 	<br>
 	<br>
 	Changelog:
+	<p>2.1.1
+	<p>-iOS 8 support
+	<p>-arm64 support
+	<p>-I don the Hat of Reduced Dependencies for +2 portability
+	<br>
 	<p>2.1
 	<p>-iOS 7.1 crash files (.ips) now supported
 	<p>-Fixed issue where 'stop' action wouldn't work sometimes
