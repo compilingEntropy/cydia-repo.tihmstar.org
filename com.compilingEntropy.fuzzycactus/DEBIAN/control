@@ -1,6 +1,6 @@
 Package: com.compilingentropy.fuzzycactus
 Name: Fuzzycactus
-Version: 2.1.4-1
+Version: 2.1.5-1
 Description: Automated MobileSafari Fuzzer
 	<html>
 	<div align="left">
@@ -9,10 +9,11 @@ Description: Automated MobileSafari Fuzzer
 	<br>
 	Usage:
 	<p>fuzzycactus [action] [file] [options]
-	<p>fuzzycactus [start/stop/watch/help] [./file.mov] [-s] [-t 11] [-r 0.0001:0.001] [-k]
+	<p>fuzzycactus [start/stop/watch/update/help] [./file.mov] [-s] [-t 11] [-r 0.0001:0.001] [-k]
 	<p>~$ fuzzycactus start ./file.mov
 	<p>~$ fuzzycactus stop
 	<p>~$ fuzzycactus watch
+	<p>~$ fuzzycactus update
 	<p>~$ fuzzycactus help
 	<br>
 	The working directory for this tool is /private/var/fuzzycactus/, you can see your results and crashes in there.
@@ -27,6 +28,9 @@ Description: Automated MobileSafari Fuzzer
 	<br>
 	<br>
 	Changelog:
+	<p>2.1.5
+	<p>-Added an 'update' function, so you can now update with 'fuzzycactus update'.
+	<br>
 	<p>2.1.4
 	<p>-Fix where date was not being pulled from crashes in certain situations
 	<br>
